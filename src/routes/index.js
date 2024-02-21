@@ -1,4 +1,4 @@
-import { tasks } from './users/index.js'
+import { tasks } from './tasks/index.js'
 
 export const routes = [
   ...tasks
