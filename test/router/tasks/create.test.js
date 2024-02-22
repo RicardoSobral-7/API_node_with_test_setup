@@ -1,7 +1,7 @@
 import { describe, it } from 'node:test'
 import assert from 'node:assert'
 
-describe('Create tasks', () => {
+describe('Create tasks integration', () => {
   it('Should not create task witout title', async () => {
     const data = {
       description: "teste descrição"
@@ -18,7 +18,7 @@ describe('Create tasks', () => {
 
   it('Should not create task witout description', async () => {
     const data = {
-      description: "teste descrição"
+      title: "teste descrição"
     }
     const response = await fetch('http://localhost:3333/tasks', {
       method: "POST",
